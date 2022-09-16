@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01/09/2022, 18:33:27
+    Author     : User
+*/
+
+body{
+    
+background: linear-gradient(90deg, #9E3333 0%, #4B537B 100%);
+}
+
+borde{
+    
+background: linear-gradient(90deg, #9E3333 0%, #4B537B 100%);
+}
+
+.botoncrud{
+    background: #754357;
+    border-color: white;
+    width:  120px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cedula{
+    width:  130px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://CARRERA/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://CARRERA/">
+
+<xs:element name="ADD_CARRERA" type="tns:ADD_CARRERA" />
+
+<xs:element name="ADD_CARRERAResponse" type="tns:ADD_CARRERAResponse" />
+
+<xs:element name="DELETE_CARRERA" type="tns:DELETE_CARRERA" />
+
+<xs:element name="DELETE_CARRERAResponse" type="tns:DELETE_CARRERAResponse" />
+
+<xs:element name="UPDATE_CARRERA" type="tns:UPDATE_CARRERA" />
+
+<xs:element name="UPDATE_CARRERAResponse" type="tns:UPDATE_CARRERAResponse" />
+
+<xs:complexType name="DELETE_CARRERA">
+<xs:sequence>
+<xs:element name="idcarreras" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DELETE_CARRERAResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ADD_CARRERA">
+<xs:sequence>
+<xs:element name="nombre_carrera" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ADD_CARRERAResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UPDATE_CARRERA">
+<xs:sequence>
+<xs:element name="idcarreras" type="xs:int" />
+<xs:element name="nombre_carrera" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="UPDATE_CARRERAResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

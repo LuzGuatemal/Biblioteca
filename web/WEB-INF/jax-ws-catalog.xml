@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8084/ServicioWeb/CARRERA?wsdl" uri="wsdl/localhost_8084/ServicioWeb/CARRERA.wsdl"/>
+    <system systemId="http://localhost:8084/ServicioWeb/CARRERA?xsd=1" uri="wsdl/localhost_8084/ServicioWeb/CARRERA.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/ServicioWeb/LOGIN?wsdl" uri="wsdl/localhost_8084/ServicioWeb/LOGIN.wsdl"/>
+    <system systemId="http://localhost:8084/ServicioWeb/LOGIN?xsd=1" uri="wsdl/localhost_8084/ServicioWeb/LOGIN.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/ServicioWeb/LIBROS?wsdl" uri="wsdl/localhost_8084/ServicioWeb/LIBROS.wsdl"/>
+    <system systemId="http://localhost:8084/ServicioWeb/LIBROS?xsd=1" uri="wsdl/localhost_8084/ServicioWeb/LIBROS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/ServicioWeb/PRESTAMOS?wsdl" uri="wsdl/localhost_8084/ServicioWeb/PRESTAMOS.wsdl"/>
+    <system systemId="http://localhost:8084/ServicioWeb/PRESTAMOS?xsd=1" uri="wsdl/localhost_8084/ServicioWeb/PRESTAMOS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8084/ServicioWeb/Servicios?wsdl" uri="wsdl/localhost_8084/ServicioWeb/Servicios.wsdl"/>
+    <system systemId="http://localhost:8084/ServicioWeb/Servicios?xsd=1" uri="wsdl/localhost_8084/ServicioWeb/Servicios.xsd_1.xsd"/>
+</catalog>

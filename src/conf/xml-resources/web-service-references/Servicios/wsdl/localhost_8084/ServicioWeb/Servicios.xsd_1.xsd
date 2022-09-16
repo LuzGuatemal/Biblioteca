@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://Modelo/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Modelo/">
+
+<xs:element name="ActualizarLibro" type="tns:ActualizarLibro" />
+
+<xs:element name="ActualizarLibroResponse" type="tns:ActualizarLibroResponse" />
+
+<xs:element name="ActualizarUsuario" type="tns:ActualizarUsuario" />
+
+<xs:element name="ActualizarUsuarioResponse" type="tns:ActualizarUsuarioResponse" />
+
+<xs:element name="EliminarLibro" type="tns:EliminarLibro" />
+
+<xs:element name="EliminarLibroResponse" type="tns:EliminarLibroResponse" />
+
+<xs:element name="EliminarUsuario" type="tns:EliminarUsuario" />
+
+<xs:element name="EliminarUsuarioResponse" type="tns:EliminarUsuarioResponse" />
+
+<xs:element name="GuardarDevolucion" type="tns:GuardarDevolucion" />
+
+<xs:element name="GuardarDevolucionResponse" type="tns:GuardarDevolucionResponse" />
+
+<xs:element name="GuardarLibro" type="tns:GuardarLibro" />
+
+<xs:element name="GuardarLibroResponse" type="tns:GuardarLibroResponse" />
+
+<xs:element name="GuardarPrestamo" type="tns:GuardarPrestamo" />
+
+<xs:element name="GuardarPrestamoResponse" type="tns:GuardarPrestamoResponse" />
+
+<xs:element name="GuardarUsuario" type="tns:GuardarUsuario" />
+
+<xs:element name="GuardarUsuarioResponse" type="tns:GuardarUsuarioResponse" />
+
+<xs:element name="Guardarlogin" type="tns:Guardarlogin" />
+
+<xs:element name="GuardarloginResponse" type="tns:GuardarloginResponse" />
+
+<xs:element name="ListarDevoluciones" type="tns:ListarDevoluciones" />
+
+<xs:element name="ListarDevolucionesResponse" type="tns:ListarDevolucionesResponse" />
+
+<xs:element name="ListarLibros" type="tns:ListarLibros" />
+
+<xs:element name="ListarLibrosId" type="tns:ListarLibrosId" />
+
+<xs:element name="ListarLibrosIdResponse" type="tns:ListarLibrosIdResponse" />
+
+<xs:element name="ListarLibrosResponse" type="tns:ListarLibrosResponse" />
+
+<xs:element name="ListarPrestamos" type="tns:ListarPrestamos" />
+
+<xs:element name="ListarPrestamosId" type="tns:ListarPrestamosId" />
+
+<xs:element name="ListarPrestamosIdResponse" type="tns:ListarPrestamosIdResponse" />
+
+<xs:element name="ListarPrestamosResponse" type="tns:ListarPrestamosResponse" />
+
+<xs:element name="ListarUsuarios" type="tns:ListarUsuarios" />
+
+<xs:element name="ListarUsuariosId" type="tns:ListarUsuariosId" />
+
+<xs:element name="ListarUsuariosIdResponse" type="tns:ListarUsuariosIdResponse" />
+
+<xs:element name="ListarUsuariosResponse" type="tns:ListarUsuariosResponse" />
+
+<xs:element name="Validar" type="tns:Validar" />
+
+<xs:element name="ValidarResponse" type="tns:ValidarResponse" />
+
+<xs:element name="hello" type="tns:hello" />
+
+<xs:element name="helloResponse" type="tns:helloResponse" />
+
+<xs:complexType name="ListarLibrosId">
+<xs:sequence>
+<xs:element name="pkLibroId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarLibrosIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="user">
+<xs:sequence>
+<xs:element name="anioPublicacionM" type="xs:string" minOccurs="0" />
+<xs:element name="apellidosU" type="xs:string" minOccurs="0" />
+<xs:element name="autorM" type="xs:string" minOccurs="0" />
+<xs:element name="cargo" type="xs:string" minOccurs="0" />
+<xs:element name="carreraId" type="xs:string" minOccurs="0" />
+<xs:element name="cedula" type="xs:int" />
+<xs:element name="cedulaU" type="xs:int" />
+<xs:element name="ciudadM" type="xs:string" minOccurs="0" />
+<xs:element name="codigoM" type="xs:string" minOccurs="0" />
+<xs:element name="contasenia" type="xs:string" minOccurs="0" />
+<xs:element name="correoU" type="xs:string" minOccurs="0" />
+<xs:element name="edicionM" type="xs:string" minOccurs="0" />
+<xs:element name="editorialM" type="xs:string" minOccurs="0" />
+<xs:element name="estadoM" type="xs:string" minOccurs="0" />
+<xs:element name="fechaDevolucion" type="xs:string" minOccurs="0" />
+<xs:element name="fechaPrestamo" type="xs:string" minOccurs="0" />
+<xs:element name="fk_carreraId" type="xs:int" />
+<xs:element name="fk_formacionAcademicaId" type="xs:int" />
+<xs:element name="fk_nivelAcademicoId" type="xs:int" />
+<xs:element name="formacionAcademicaId" type="xs:string" minOccurs="0" />
+<xs:element name="incluyeCd" type="xs:string" minOccurs="0" />
+<xs:element name="nivelAcademicoId" type="xs:string" minOccurs="0" />
+<xs:element name="nombresU" type="xs:string" minOccurs="0" />
+<xs:element name="nroEjemplaresM" type="xs:int" />
+<xs:element name="nroPaginasM" type="xs:int" />
+<xs:element name="paisM" type="xs:string" minOccurs="0" />
+<xs:element name="pk_devolucionesId" type="xs:int" />
+<xs:element name="pk_librosId" type="xs:int" />
+<xs:element name="pk_prestamosId" type="xs:int" />
+<xs:element name="pk_usuariosId" type="xs:int" />
+<xs:element name="registroISBNM" type="xs:string" minOccurs="0" />
+<xs:element name="tiempoVigenciaM" type="xs:string" minOccurs="0" />
+<xs:element name="tipoM" type="xs:string" minOccurs="0" />
+<xs:element name="tituloM" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarPrestamosId">
+<xs:sequence>
+<xs:element name="pkUsuarioId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarPrestamosIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarDevolucion">
+<xs:sequence>
+<xs:element name="fechaDevolucion" type="xs:string" minOccurs="0" />
+<xs:element name="fkPrestamoId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarDevolucionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarUsuariosId">
+<xs:sequence>
+<xs:element name="pk_UsuarioId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarUsuariosIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarPrestamo">
+<xs:sequence>
+<xs:element name="fechaPrestamo" type="xs:string" minOccurs="0" />
+<xs:element name="fkUsuarioId" type="xs:int" />
+<xs:element name="fklibroId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarPrestamoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarUsuario">
+<xs:sequence>
+<xs:element name="pk_UsuarioId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarLibro">
+<xs:sequence>
+<xs:element name="codigoM" type="xs:string" minOccurs="0" />
+<xs:element name="autorM" type="xs:string" minOccurs="0" />
+<xs:element name="edicionM" type="xs:string" minOccurs="0" />
+<xs:element name="anioPublicacionM" type="xs:string" minOccurs="0" />
+<xs:element name="tituloM" type="xs:string" minOccurs="0" />
+<xs:element name="ciudadM" type="xs:string" minOccurs="0" />
+<xs:element name="paisM" type="xs:string" minOccurs="0" />
+<xs:element name="editorialM" type="xs:string" minOccurs="0" />
+<xs:element name="registroISBNM" type="xs:string" minOccurs="0" />
+<xs:element name="nroPaginasM" type="xs:int" />
+<xs:element name="estadoM" type="xs:string" minOccurs="0" />
+<xs:element name="nroEjemplaresM" type="xs:int" />
+<xs:element name="incluyeCd" type="xs:string" minOccurs="0" />
+<xs:element name="tipoM" type="xs:string" minOccurs="0" />
+<xs:element name="tiempoVigenciaM" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarLibroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarPrestamos">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ListarPrestamosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActualizarUsuario">
+<xs:sequence>
+<xs:element name="pk_UsuarioId" type="xs:int" />
+<xs:element name="cedulaU" type="xs:int" />
+<xs:element name="nombresU" type="xs:string" minOccurs="0" />
+<xs:element name="apellidosU" type="xs:string" minOccurs="0" />
+<xs:element name="correoU" type="xs:string" minOccurs="0" />
+<xs:element name="fkcarreraId" type="xs:int" />
+<xs:element name="fknivelAcademicoId" type="xs:int" />
+<xs:element name="fkformacionAcademicaId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActualizarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarUsuario">
+<xs:sequence>
+<xs:element name="cedulaU" type="xs:int" />
+<xs:element name="nombresU" type="xs:string" minOccurs="0" />
+<xs:element name="apellidosU" type="xs:string" minOccurs="0" />
+<xs:element name="correoU" type="xs:string" minOccurs="0" />
+<xs:element name="fk_carreraId" type="xs:int" />
+<xs:element name="fk_nivelAcademicoId" type="xs:int" />
+<xs:element name="fk_formacionAcademicaId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarUsuarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarUsuarios">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ListarUsuariosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarDevoluciones">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ListarDevolucionesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActualizarLibro">
+<xs:sequence>
+<xs:element name="pk_librosId" type="xs:int" />
+<xs:element name="codigoM" type="xs:string" minOccurs="0" />
+<xs:element name="autorM" type="xs:string" minOccurs="0" />
+<xs:element name="edicionM" type="xs:string" minOccurs="0" />
+<xs:element name="anioPublicacionM" type="xs:string" minOccurs="0" />
+<xs:element name="tituloM" type="xs:string" minOccurs="0" />
+<xs:element name="ciudadM" type="xs:string" minOccurs="0" />
+<xs:element name="paisM" type="xs:string" minOccurs="0" />
+<xs:element name="editorialM" type="xs:string" minOccurs="0" />
+<xs:element name="registroISBNM" type="xs:string" minOccurs="0" />
+<xs:element name="nroPaginasM" type="xs:int" />
+<xs:element name="estadoM" type="xs:string" minOccurs="0" />
+<xs:element name="nroEjemplaresM" type="xs:int" />
+<xs:element name="incluyeCd" type="xs:string" minOccurs="0" />
+<xs:element name="tipoM" type="xs:string" minOccurs="0" />
+<xs:element name="tiempoVigenciaM" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActualizarLibroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Validar">
+<xs:sequence>
+<xs:element name="cedula" type="xs:int" />
+<xs:element name="contrasenia" type="xs:string" minOccurs="0" />
+<xs:element name="cargo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ValidarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarLibro">
+<xs:sequence>
+<xs:element name="pk_LibroId" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EliminarLibroResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Guardarlogin">
+<xs:sequence>
+<xs:element name="cedula" type="xs:int" />
+<xs:element name="contrasenia" type="xs:string" minOccurs="0" />
+<xs:element name="cargo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarloginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ListarLibros">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ListarLibrosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
